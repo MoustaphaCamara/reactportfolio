@@ -6,7 +6,7 @@
   font-size: 1.2rem;
 
   @media screen and (max-width: 650px){
-    width: 30%;
+    width: 50%;
   }
 
   ul {
@@ -18,10 +18,18 @@
     @media screen and (max-width: 450px){
       min-width: 100%;
     }
-
+    
     a {
       padding: 1rem;
       transition: 1.1s ease-out;
+    }
+    i {
+      font-size: 28px;
+      transition: all .15s ease;
+      padding: 10px;
+      @media screen and (max-width: 450px){
+        font-size: 28px;
+      }
     }
   }
 }

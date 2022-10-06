@@ -4,12 +4,14 @@ import Logo from "../components/Logo";
 import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import Project from "../components/Project";
+import Rotate from "../components/Rotate";
 
 const Project1 = () => {
   return (
     <main>
       <Mouse />
       <div className="project">
+        <Rotate />
         <Navigation />
         <Logo />
         <Project projectNumber={0} />

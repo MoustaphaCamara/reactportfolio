@@ -5,6 +5,7 @@ import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
+import Rotate from "../components/Rotate";
 
 const Home = () => {
   const variants = {
@@ -35,6 +36,7 @@ const Home = () => {
       >
         <Navigation />
         <SocialNetwork />
+        <Rotate />
         <div className="home-main">
           <div className="main-content">
             <motion.h1
@@ -53,6 +55,12 @@ const Home = () => {
             <h2>
               <DynamicText />
             </h2>
+            <h3>ReactJS - NextJS / Redux</h3>
+            <h3>PHP / MySQL</h3>
+            <br />
+            <a href="./assets/CV.pdf" className="cv hover" target="_blank">
+              <span>Télécharger CV (pdf) </span>
+            </a>
           </div>
         </div>
         <Buttons right={"/projet-1"} />

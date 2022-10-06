@@ -90,6 +90,9 @@ const Project = ({ projectNumber }) => {
           <a href={currentProject.link} target="_blank" className="hover">
             <div className="button">voir le site</div>
           </a>
+          <a href={currentProject.gitlink} target="_blank" className="hover">
+            <div className="button">code source</div>
+          </a>
         </div>
       </motion.div>
       <span

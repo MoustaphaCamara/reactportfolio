@@ -7,6 +7,7 @@ import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
+import Rotate from "../components/Rotate";
 
 const Contact = () => {
   const pageTransition = {
@@ -22,6 +23,7 @@ const Contact = () => {
   return (
     <main>
       <Mouse />
+
       <motion.div
         className="contact"
         initial="out"
@@ -32,7 +34,9 @@ const Contact = () => {
       >
         <Navigation />
         <Logo />
+        <Rotate />
         <ContactForm />
+
         <div className="contact-infos">
           <div className="address">
             <div className="content">
@@ -71,6 +75,7 @@ const Contact = () => {
             </div>
           </div>
           <SocialNetwork />
+
           <div className="credits">
             <p>Moustapha Camara - 2022</p>
           </div>

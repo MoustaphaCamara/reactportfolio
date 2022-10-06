@@ -2,6 +2,10 @@
   position: relative;
   display: flex;
 
+  @media screen and (max-width:400px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #text-target {
     display: flex;
     width: 300px;
@@ -9,10 +13,53 @@
     animation: color 30s alternate infinite;
     perspective: 200px;
     transform: translateX(26px);
+    @media screen and (max-width:650px) {
+      display:none;
+      
+    }
   }
-  .word {
-    position: absolute;
+  #text-target2 {
+    display: flex;
+    width: 300px;
+    text-align: left;
+    justify-content: left;
+    perspective: 200px;
+    transform: translateX(20px);
+    @media screen and (max-width:650px) {
+      transform: translateX(5px);
+      width: 180px;
+    }
+    @media screen and (max-width:400px) {
+      transform: translateX(0);
+      width: 150px;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+    @media screen and (min-width:650px) {
+      display: none;
+    }
+ 
   }
+  .appear {
+    color: blue;
+    animation: appear 2s ease infinite;
+    opacity: 0;
+  }
+  
+  @keyframes appear {
+    0% {
+      color: #ec006e;
+    }
+    50% {
+      opacity: 1;
+      color:blue
+    }
+    100% {
+      opacity: 0;
+      color: #ec006e;
+    }
+  }
+  
   @keyframes color {
     0% {
       color: blue;

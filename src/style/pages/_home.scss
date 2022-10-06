@@ -39,12 +39,22 @@
     align-items: center;
     justify-items: center;
     height: 95%;
-
+    @media screen and (max-width:650px) {
+      margin-left: 2rem;
+    }
     .main-content {
       user-select: none;
 
+      @media screen and (max-width:400px) {
+
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;        
+      }
+
       h1 {
-        font-size: 3.7rem;
+        font-size: 3rem;
         position: relative;
         font-family: $font-2;
 
@@ -52,7 +62,7 @@
           font-size: 2rem;
         }
         @media screen and (min-width: 1200px){
-          font-size: 5rem;
+          font-size: 3.5rem;
         }
 
         &:before {
@@ -83,16 +93,24 @@
         }
       }
       h2 {
-        font-size: 4.2rem;
+        font-size: 2rem;
         font-weight: 100;
 
         @media screen and (max-width: 650px){
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         @media screen and (min-width: 1200px){
-          font-size: 5rem;
+          font-size: 3rem;
         }
       }
     }
+  }
+  .cv {
+    font-size: 1.1rem;
+    transition: all .15s ease;
+  &:hover {
+    color: $color-2;
+    cursor: pointer;
+  }
   }
 }

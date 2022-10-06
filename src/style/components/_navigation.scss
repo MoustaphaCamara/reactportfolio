@@ -5,6 +5,7 @@
   font-size: 1.4rem;
   line-height: 28px;
   color: $color-4;
+  z-index: 10000;
 
   &:before {
     content: '';
