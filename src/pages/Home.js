@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation";
 import SocialNetwork from "../components/SocialNetwork";
 import { motion } from "framer-motion";
 import Rotate from "../components/Rotate";
+import Bubbles from "../components/Bubbles";
 
 const Home = () => {
   const variants = {
@@ -37,6 +38,8 @@ const Home = () => {
         <Navigation />
         <SocialNetwork />
         <Rotate />
+        <Bubbles />
+
         <div className="home-main">
           <div className="main-content">
             <motion.h1

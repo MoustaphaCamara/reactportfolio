@@ -34,7 +34,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Vitrine Gaming Campus",
+    title: "Gaming Campus",
     date: "Avril 2022",
     languages: ["HTML", "CSS"],
     infos:

@@ -21,4 +21,18 @@
   .right {
     right: -24px;
   }
+  @media screen and (max-width:480px) {
+    .left {
+      top: -10px;
+      left: 45%;
+      transform: rotate(90deg);
+    }
+    
+    .right {
+      transform: rotate(90deg);
+      right: 45%;
+      top:85%;
+    } 
+    
+  }
 }

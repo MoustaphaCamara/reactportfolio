@@ -26,7 +26,7 @@
   }
 
   .navigation {
-    top: 5px;
+    top: 30px;
     left: 60%;
     font-size: 1.1rem;
     line-height: 20px;
@@ -86,20 +86,36 @@
     @media screen and (max-height: 600px){
       margin: 3rem 1rem 0;
     }
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:480px) {
+      padding-top: 1rem;
       text-align: left;
+      grid-template-rows: 0.7fr 1fr;
     }
     .project-content {
       margin-right: 20px;
       
       @media screen and (max-width: 700px){
+        margin-right: 0px;
         display: flex;
         justify-content: space-between;
         gap: 10px;
         align-items: center;
         padding: 0 .5rem;
       }
-
+      @media screen and (max-width:480px) {
+        flex-direction: column;
+        .languages {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+         width: 200px;
+         justify-content: center;
+         margin-bottom: 30px;
+         li {
+          font-size: 1.3rem;
+         }
+        }
+      }
 
       h1 {
         font-size: 2.5rem;
@@ -113,7 +129,7 @@
         @media screen and (max-width: 910px){
           font-size: 1.5rem;
         }
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 350px){
           font-size: 1.2rem;
         }
 
@@ -132,10 +148,10 @@
           margin: 0;
           align-self: center;
         }
-        @media screen and (max-width: 450px){
+        // @media screen and (max-width: 450px){
           
-          font-size: .9rem;
-        }
+        //   font-size: .9rem;
+        // }
         
         &:after {
           content: "";
@@ -197,7 +213,7 @@
         }
         @media screen and (max-width: 400px){
           height: 150px;
-          width: 280px
+          width: 280px;
         }
 
         &:hover span,
@@ -252,7 +268,13 @@
     width: 130px;
     display: flex;
     gap: 20px;
-
+    @media screen and (max-width:540px) {
+        width: auto;
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+    
+    }
     a {
       .button {
         display: flex;

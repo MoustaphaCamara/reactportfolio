@@ -49,7 +49,8 @@ body {
   @media screen and (max-width: 430px){
     position: relative;
     max-width: 100vw;
-    overflow-y: initial;
+    overflow-y: hidden;
+    max-height: 100vh;
   }
 }
 main {
