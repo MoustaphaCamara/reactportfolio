@@ -1,14 +1,6 @@
-@font-face {
-  font-family: "font-1";
-  src: url(../assets/fonts/Questrial-Regular.ttf);
-}
-@font-face {
-  font-family: "font-2";
-  src: url(../assets/fonts/Michroma-Regular.ttf);
-}
 
-$font-1: "font-1", sans-serif;
-$font-2: "font-2", serif;
+$font-1: "Questrial", sans-serif;
+$font-2: "Michroma", serif;
 
 $color-1: #fafeff;
 $color-2: #00c1ec;
@@ -25,8 +17,9 @@ $red: rgb(253, 87, 87);
   outline: none;
   border: none;
   text-decoration: none;
-  // cursor: none;
-  
+  @media screen and (min-width:480px) {
+    cursor:none;
+  }
   &::selection {
     color: $color-1;
     background: $color-2;

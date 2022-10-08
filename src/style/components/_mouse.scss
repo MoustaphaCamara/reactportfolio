@@ -6,6 +6,9 @@
   transition: none;
   z-index: 10001;
   backdrop-filter: brightness(115%);
+  @media screen and (max-width:480px) {
+    display: none;
+  }
 }
 .cursor {
   width: 12px;
