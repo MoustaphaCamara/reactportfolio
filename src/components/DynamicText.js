@@ -51,7 +51,7 @@ const DynamicText = () => {
         if (array2[languages] == undefined) {
           languages = 0;
         }
-      }, 2000);
+      }, 3000);
     }
     wordChange();
   }, []);
@@ -59,7 +59,7 @@ const DynamicText = () => {
   return (
     <span className="dynamic-text">
       <span>Développement web</span>
-      <span id="text-target"></span>
+      {/* <span id="text-target"></span> */}
       <span id="text-target2"></span>
     </span>
   );
