@@ -4,30 +4,19 @@ const SocialNetwork = () => {
   const anim = () => {
     // effect1
 
-    const icons = document.querySelectorAll(".social-network a");
+    const icons = document.querySelectorAll(".social-network li");
     icons.forEach((icon) => {
-      icon.addEventListener("mouseover", (e) => {
-        icon.style.transform = `translate(${e.offsetX - 20}px,${
-          e.offsetY - 13
-        }px)`;
+      const link = icon.firstChild;
+      icon.addEventListener("mousemove", (e) => {
+        const x = e.layerX - 50;
+        const y = e.layerY - 50;
+        link.style.transform = `translate(${x / 5}px, ${y / 5}px)`;
+        // link.style.transform = `translate(${e.offsetX - 20}px,${e.offsetY - 13}px)`;
       });
       icon.addEventListener("mouseleave", () => {
-        icon.style.transform = "";
+        link.style.transform = "";
       });
     });
-
-    // effect2
-    // const links = document.querySelectorAll(".social-network i");
-    // links.forEach((link) => {
-    //   link.addEventListener("mousemove", (e) => {
-    //     const x = e.layerX - 60;
-    //     const y = e.layerY - 60;
-    //     e.target.style.transform = `translate(${x / 15}px, ${y / 15}px)`;
-    //   });
-    //   link.addEventListener("mouseleave", (e) => {
-    //     e.target.style.transform = "translate(0,0)";
-    //   });
-    // });
   };
 
   return (
